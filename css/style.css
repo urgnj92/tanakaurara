@@ -138,28 +138,20 @@ a {
 }
 
 /* Works */
-#works .image {
-    padding-top: 30px;
-}
-#works .image_sp {
-    display: flex;
-    flex-direction:unset;
-    width: 30%;
-}
-/* #works .image img {
-    /* border: 2px solid #CC83D1;
-} */
 #works.wrapper {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 25px;
 }
 #works .inner-wrapper {
     display: flex;
     color: #707070;
-    font-size: 16px;
     text-align: left;
     width: 700px;
+}
+#works .contents {
+    padding: 0 40px 30px 40px;
+
 }
 #works .comment p {
     text-align: right;
