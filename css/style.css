@@ -82,7 +82,7 @@ a {
 .section-title {
     color: #707070;
     margin-bottom: 30px;
-    border-bottom: dotted #AC00BA;
+    text-decoration: underline dotted #AC00BA;
 }
 .container {
     max-width: 1200px;
@@ -141,9 +141,14 @@ a {
 #works .image {
     padding-top: 30px;
 }
-#works .image img {
-    border: 2px solid #CC83D1;
+#works .image_sp {
+    display: flex;
+    flex-direction:unset;
+    width: 30%;
 }
+/* #works .image img {
+    /* border: 2px solid #CC83D1;
+} */
 #works.wrapper {
     display: flex;
     flex-direction: column;
