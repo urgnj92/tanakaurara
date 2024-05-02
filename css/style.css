@@ -36,23 +36,28 @@ a {
 
 /* header */
 #header {
+    align-items: center;
+    background-color: #FFF;
+    box-shadow: 3px 5px 3px #EAE7E7;
+    display: flex;
+    justify-content: space-around;
     height: 180px;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #FFF;
     padding: 10px;
-    z-index: 1000;
-    box-shadow: 3px 5px 3px #EAE7E7;
+    /* position: fixed; */
+    /* z-index: 1000; */
 }
 #header .menu ul {
     display: flex;
     color: #707070;
 }
 #header .menu li {
-    text-decoration: underline dotted #AC00BA;
+    font-size: 1.25rem;
+    /* text-decoration: underline dotted #AC00BA; */
     text-align: center;
+    padding: 5px;
 }
 .logo a {
     display: block;
@@ -68,14 +73,13 @@ a {
 /* main visual */
 #mainvisual {
     display: block;
-    margin-top: 200px;
-    /* margin-bottom: 10px; */
+    margin-top: 50px;
 }
 #mainvisual img {
     width: 1200px;
     height: 550px;
     object-fit: cover;
-  /* padding-top: 50px; */
+    border-radius: 0 20px 0 20px;
 }
 
 /* mainvisual以下、共通部分（section-title, container, wrapper) */
@@ -97,6 +101,10 @@ a {
     display: flex;
     justify-content: space-between;
 }
+#profile .wrapper .image,
+#skills .wrapper .image {
+    width: 40%;
+}
 .wrapper .image img {
     width: 100%;
     margin: 0 auto;
@@ -109,7 +117,7 @@ a {
     padding: 40px 30px;
     font-size: 16px;
     text-align: left;
-    width: 700px;
+    width: 60%;
 }
 
 /* News */
@@ -118,7 +126,9 @@ a {
     flex-direction: column;
 }
 #news .list {
+    color: #707070;
     display: flex;
+    font-size: 1.25rem;
     justify-content: space-between;
 }
 #news.wrapper {
@@ -151,7 +161,9 @@ a {
 }
 #works .contents {
     padding: 0 40px 30px 40px;
-
+}
+#works .image img {
+    padding: 0;
 }
 #works .comment p {
     text-align: right;
@@ -252,6 +264,8 @@ a {
 
     /* Header */
     #header {
+        display: flex;
+        flex-direction: column;
         height: auto;
         padding: 0;
     }
@@ -262,7 +276,7 @@ a {
     #header ul {
         justify-content: space-between;
         margin: 0 auto;
-        padding: 20px 40px;
+        padding: 0 40px 15px 40px;
     }
     #header li {
         font-size: 0.8rem;
@@ -297,6 +311,13 @@ a {
         margin-bottom: 20px;
     }
 
+    /* News */
+    #news .inner-wrapper {
+        padding: 15px;
+    }
+    #news .list {
+        font-size: 1rem;
+    }
     /* Works */
     #works .inner-wrapper {
         display: flex;
@@ -306,7 +327,9 @@ a {
     #works .image img {
         width: 100%;
     }
-
+    #works .contents {
+        padding: 0 0 30px 0;
+    }
     /* Footer */
     #footer .logo img {
         width: 100%;
